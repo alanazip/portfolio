@@ -415,7 +415,15 @@ section + section {
   transition: transform 0.25s ease;
   scroll-snap-align: center;
 }
-
+/* imagem do corretor ocupa quase toda a tela */
+.mobile-gallery img[alt="Corretores App"] {
+  width: 95vw;
+  max-width: 95vw;
+  height: auto;
+  border-radius: 12px;
+  margin: 0 auto;
+  display: block;
+}
 .mobile-gallery img:hover {
   transform: scale(1.04);
 }
@@ -448,14 +456,18 @@ section + section {
 
 .web-gallery img {
   width: 100%;
-  max-width: 280px;
+  max-width: 320px;
   height: auto;
   border-radius: 10px;
   object-fit: contain;
   box-shadow: 0 0 18px rgba(113, 73, 56, 0.5);
   transition: transform 0.25s ease;
 }
-
+/* aumenta levemente as imagens da seção PROJECTS WEB */
+.web-gallery img {
+  max-width: 440px !important;
+  transform: scale(1.05);
+}
 .web-gallery img:hover {
   transform: scale(1.02);
 }
